@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="icon" href="picture/logo.jpg">
+<title>Ilana Debi</title>
+<style>
+    body {
+    background-color: #ff9999
+    }
+    </style>
+</head>
+<body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v6.0"></script>
+
+<div class="topnav">
+  <a href="#aboutMe">About Me</a>
+  <a href="#myPhotos">Photos</a>
+  <a href="#myPlaylist">playlist</a>
+  <a href="#like">Like</a>
+  <a href="#QRCode">QR code</a>
+  <a href="#Q&A">Q&A</a>
+  <a href="#contactMe">Contact me</a>
+</div>
+
+
+<section id="aboutMe" class="section">
+<br/>
+<br/>
+<center><h1 style="font-size:30px;">About Ilana Debi</h1></center>
+<center><p2>
+Grandma Ilana was born in March 1993 in Iraq.<br/>
+She has 7 brothers, 5 daughters, 13 grandchildren and 12 great-grandchildren.<br/>
+She immigrated to Israel with her parents in 1951. They settled in the Be'er Ya'akov crossing and lived in tents <br/>
+till she married Jacob, god rest his soul.<br/>
+Life in the aisles was difficult, distributing food in portions according to the number of children in the family.<br/>
+<br/>
+<b style="font-size:25px;">I interviewed Grandma about arriving in Israel:</b><br/>
+the immigration from Iraq began in the 50s.<br/>
+Some began to immigrate through Peres and some immigrated directly to Israel.<br/>
+<b style="font-size:30px;">"</b>
+Towards the end of the Aliyah, my brother worked in spare parts for cars, where grenades were thrown.<br/>
+He came home and insisted that we move to Israel because of fear.<br/>
+In April 1951, we prepared our passports. We were informed that all of our property belonged to Iraq and we could not take it<br/>
+We arrived in Israel in August 1951. We sprayed with DDT. <br/>
+We arrived at a place called "Shaar Haaliya" where all the Jews arrived.<br/>
+We were there for a month and a half and then we moved to Beer Yaakov. 
+<b style="font-size:30px;">"</b><br/><br/>
+Ben Gurion was the one who organized the aliyah.<br/>
+Within six months, almost all Iraqi Jews arrived. The planes were of England..<br/>
+When they arrived in Beer Yaakov, they had to live for 9 people in one tent..<br/>
+After 8 months they were given a wooden shack..<br/>
+Her father was 60 and couldn't find a job. In Iraq he was a jeweler who owned a jewelry store..<br/>
+When Ilana was 17, she started working in the orchard..<br/>
+She and her sister picked oranges, lemons and cotton wool - without gloves..<br/>
+Ilana got married in 1952 and moved to Holon.
+
+</p2></center>
+</section>
+
+<section id="myPhotos" class="section">
+<br>
+<br>
+<center><h1 style="font-size:30px;">Photos</h1>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="picture/pic1.jpg" style="width:55%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="picture/pic2.jpg" style="width:55%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="picture/pic3.jpg" style="width:55%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="picture/pic4.jpg" style="width:55%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="picture/pic5.jpg" style="width:55%">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+  </div>
+</center>
+
+  <script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+</section>
+
+<section id="myPlaylist" class="section">
+<br/>
+<br/>
+<center><h1 style="font-size:30px;">My Playlist</h1>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VGPJUsaf0u0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</center>
+
+<br>
+
+</section>
+<section id="like" class="section">
+<br>
+<br>
+<center><h1 style="font-size:30px;">Give me a like</h1>
+<div class="fb-like" data-href="https://sise-web-development-environments.github.io/assignment1-307938969/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div></section>                                                       
+<section id="QRCode" class="section">
+<br>
+<br>
+<center><h1 style="font-size:30px;">Our QR Code</h1>
+<center><img src="picture/QR1.png" height="200" width="200"></center>
+<br>
+</section>
+
+<section id="Q&A" class="section">
+<br>
+<br>
+<center><h1 style="font-size:30px;">Q & A</h1> </center>
+<p1><center>
+<u>Web 1.0</u>
+<br/>
+Web 1.0 refers to the first stage of the World Wide Web evolution. <br>
+Earlier, there were only few content creators in Web 1.0 with the huge majority of users who are consumers of content.<br> 
+Personal web pages were common, consisting mainly of static pages hosted on ISP-run web servers, or on free web hosting services.<br>
+there is only limited interaction between sites and web users.<br>
+Web 1.0 is simply an information portal where users passively receive information without being given the<br>
+opportunity to post reviews, comments, and feedback.<br>
+Static pages. Content is served from the server’s file-system.<br>
+<br/>
+<br/>
+<u>Web 2.0</u>
+<br/>
+Web 2.0 refers to world wide website which highlight user-generated content,<br>
+usability and interoperability for end users. Web 2.0 is also called participative social web.<br>
+It does not refer to a modification to any technical specification, but to modify in the way Web 
+pages are designed and used<br>
+A major difference is now Information flows between site owner and<br> 
+site users by means of evaluation & online commenting.<br> 
+As such, the end user is not only a user of the application but also a participant.<br>
+<br/>
+<br/>
+<u>Web 3.0</u>
+<br/>
+It refers the evolution of web utilization and interaction which includes altering the Web into a database.<br> 
+In enables the upgradation of back-end of the web, after a long time of focus on the front-end<br>
+(Web 2.0 has mainly been about AJAX, tagging, and another front-end user-experience innovation).<br>
+Web 3.0 is a term which is used to describe many evolutions of web usage and interaction among several paths.<br> 
+In this, data isn’t owned but instead shared, where services show different views for the same web / the same data.<br>
+A major difference is Semantic Web.<br>
+The succeeding evolution of the Web involves the Semantic Web.<br> 
+The semantic web improves web technologies in demand to create, share and connect content through<br> 
+search and analysis based on the capability to comprehend the meaning of words, rather than on keywords or numbers.<br>
+<br/>
+<br/>
+<br/>
+<u>Explanation of the differences by example of the use case</u>
+<br/>
+The question we "ask the web" is: "what are the side of Ritalin?"<br/>
+When I will "ask the web" on web1.0<br/>
+I will get static pages which indicate some common side effects with explanations.
+<br/>
+When I will "ask the web" on web3.0<br/> 
+I will get dynamic pages which based on the wisdom of the crowd,
+I will get interactive pages that have a lot of posts with a query like mine -<br/>
+those pages contain a medical database based on more than trillion user posts
+with a query like mine or queries in the same topic.
+</p1></center>
+<br/>
+<br/>
+</section>
+
+<section id="contactMe" class="section">
+<center><h1 style="font-size:30px;">Contact Me</h1> 
+<br/>
+<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="name" placeholder="Your Name"><br>
+E-mail:<br>
+<input type="text" name="mail" placeholder="Email Address"><br>
+<label for="country">Country</label><br>
+<select id="country" name="country">
+  <option value="israel">Israel</option>
+  <option value="canada">Canada</option>
+  <option value="Italy">Italy</option>
+  <option value="spain">Spain</option>
+  <option value="usa">USA</option>
+  <option value="fsrance">France</option>
+  <option value="other">Other</option>
+</select>
+<br>
+<label for="emojis">Emojis</label><br>
+
+<input list="emojis" name= "emojis" >
+<datalist id= "emojis" width="10px">
+  <option value=&#128512>
+  <option value=&#128514>
+  <option value=&#128515>
+  <option value=&#128542>
+  <option value=&#128532>
+</datalist>
+
+<br>
+Comment:<br>
+<textarea id="subject" name="comment" placeholder="Write something.." style="height:200px"></textarea><br><br>
+
+<input type="submit" onclick="alert('sent!')" value="Send">
+<input type="reset" value="Reset">
+</form>
+
+
+
+</section>
+
+
+<script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+    e.preventDefault();
+    $('html,body').scrollTo(this.hash,this.hash); 
+  });
+});
+</script>
+<script type="text/javascript">
+ $(document).scroll(function() {
+    $('#menu').toggle($(this).scrollTop()>1000)
+ });​
+ </script>
+</body>
+</html>
